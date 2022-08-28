@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GREEN APP</title>
+  </head>
+  <body>
+    <script>
+      let queryString = window.location.search;
+      let urlParams = new URLSearchParams(queryString);
+      let path = urlParams.get("path");
+
+      // window.location.replace(`aibanc:///${path}?${queryString}`);
+      window.location.replace(`exp://192.168.17.114:19000:///${path}?${queryString}`)
+    </script>
+  </body>
+</html>
